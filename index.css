@@ -3,5 +3,19 @@ body{
     height: 300px;
     background-color: #f1c1c1;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    
+    cursor: none;
+}
+.cursor{
+    position: fixed;
+    display: flex;
+    width: 6%;
+    height: auto;
+    background-color: transparent;
+    pointer-events: none;
+    z-index: 9999;
+}
+.reset{
+    width: 22px;
+    height: auto;
+    background-color: transparent;
 }
