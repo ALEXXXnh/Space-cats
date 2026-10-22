@@ -1,7 +1,8 @@
 body{
     width: 300px;
     height: 300px;
-    background-color: #f1c1c1;
+    background-color: #ebb7df;
+    
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     cursor: none;
 }
@@ -10,12 +11,111 @@ body{
     display: flex;
     width: 6%;
     height: auto;
+    
     background-color: transparent;
     pointer-events: none;
     z-index: 9999;
 }
+p{
+    font-size: 250%;
+    color: #e7cee1;
+    background-color: #8d2a762f;
+}
+
+
+
+
+
+
+
+
 .reset{
-    width: 22px;
+    position: absolute;
+    width: 3000%;
+    left: 0%;
     height: auto;
     background-color: transparent;
+}
+.reset1{
+    position: absolute;
+    left: 0%;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+
+
+
+.catbox{
+    position: absolute;
+    display: grid;
+    width: 80%;
+    height: 60%;
+    
+    margin: 10%;
+    border: 30px #fff9fd solid;
+    border-radius: 10%;
+}
+
+
+
+
+
+
+.time{
+    position: absolute;
+    top: 0%;
+    left: 43%;
+}
+.timer{
+    position: absolute;
+    top: 0%;
+    left: 52%;
+}
+
+
+
+
+
+
+
+
+
+.score{
+    position: absolute;
+    bottom: 0%;
+    left: 47%;
+}
+
+
+
+
+
+
+
+
+.cat1{
+    position: relative;
+    width: 90%;
+    height: auto;
+}
+.cat2{
+    position: relative;
+    width: 90%;
+    height: auto;
+}
+.cat3{
+    position: relative;
+    width: 90%;
+    height: auto;
+}
+.cat4{
+    position: relative;
+    width: 90%;
+    height: auto;
+}
+.cat5{
+    position: relative;
+    width: 90%;
+    height: auto;
 }
