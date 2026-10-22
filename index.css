@@ -1,29 +1,46 @@
 body{
     width: 300px;
-    height: 300px;
-    background-color: #ebb7df;
-    
+    height: 1300px;
+    background: linear-gradient(#ffa0b8 0%, #f5c4d6 70%, #68aef462 100%);
+    overflow: scroll;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     cursor: none;
+}
+@keyframes f{
+    0%{
+        opacity: 0%;
+        filter: brightness(0%);
+        transform: translateX(-100%);
+        
+    }
+    50%{
+        opacity: 50%;
+        filter: brightness(50%);
+        transform: translateX(0%);
+    }
+    100%{
+        opacity: 100%;
+        filter: brightness(100%);
+    }
+}
+#all{
+animation: f 10s;
 }
 .cursor{
     position: fixed;
     display: flex;
     width: 6%;
     height: auto;
-    
+    filter: saturate(250%);
     background-color: transparent;
     pointer-events: none;
     z-index: 9999;
 }
 p{
     font-size: 250%;
-    color: #e7cee1;
-    background-color: #8d2a762f;
+    color: #e7cece;
+    background-color: #8d2a412f;
 }
-
-
-
 
 
 
@@ -31,6 +48,7 @@ p{
 
 .reset{
     position: absolute;
+    filter: saturate(250%);
     width: 3000%;
     left: 0%;
     height: auto;
@@ -46,18 +64,196 @@ p{
 
 
 
+
+
+.cats{
+    position: absolute;
+    width: 99%;
+    height: 34%;
+    top: 100%;
+    background-color: #8d2a6a2f;
+    overflow: hidden;
+    filter: saturate(150%);
+}
+
+
+@keyframes slide{
+    0%{
+        transform: translateX(100%);
+    }
+    
+    100%{
+        transform: translateX(-109%);
+    }
+}
+.Cat1{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    animation: slide 17s linear infinite;
+}
+.cat1{
+    position: relative;
+    width: 9.5%;
+    height: auto;
+    top: 0%;
+    left: auto;
+    
+}
+.C1P{
+    position: relative;
+    width: 12%;
+    height: auto;
+    top: 100%;
+    left: auto;
+}
+.Cat3{
+    position: absolute;
+    width: 100%;
+    left: 30%;
+    animation: slide 17s linear infinite;
+}
+.cat3{
+    position: relative;
+    width: 10.15%;
+    height: auto;
+    top: 0%;
+    left: auto; 
+}
+.C3P{
+    position: relative;
+    width: 12%;
+    height: auto;
+    top: 100%;
+    left: auto;
+}
+.Cat4{
+    position: absolute;
+    width: 100%;
+    left: 60%;
+    animation: slide 17s linear infinite;
+}
+.cat4{
+    position: relative;
+    width: 14.52%;
+    height: auto;
+    top: 0%;
+    left: auto; 
+}
+.C4P{
+    position: relative;
+    width: 12%;
+    height: auto;
+    top: 100%;
+    left: auto;
+}
+.Cat5{
+    position: absolute;
+    width: 100%;
+    left: 90%;
+    animation: slide 17s linear infinite;
+}
+.cat5{
+    position: relative;
+    width: 14.92%;
+    height: auto;
+    top: 0%;
+    left: auto; 
+}
+.C5P{
+    position: relative;
+    width: 12%;
+    height: auto;
+    top: 100%;
+    left: auto;
+}
+
+
+
+
+
+
+
+@keyframes boing{
+    0%{
+        font-size: 1000%;
+    }
+    20%{
+        font-size: 1200%;
+        transform: rotateZ(-45deg);
+
+        filter: brightness(130%);
+    }
+    30%{
+        font-size: 1200%;
+        transform: rotateZ(45deg);
+
+        filter: brightness(130%);
+    }
+    40%{
+        font-size: 900%;
+        transform: rotateZ(5deg);
+
+        background-color: #8d2a6a2f;
+    }
+    50%{
+        font-size: 1800%;
+        transform: rotateZ(-5deg);
+
+        background-color: #8d2a6a2f;
+    }
+    90%{
+        font-size: 1000%;
+        transform: rotateZ(5deg);
+        filter: brightness(130%);
+    }
+    97%{
+        font-size: 1000%;
+        transform: rotateZ(-5deg);
+        filter: brightness(140%);
+    }
+    
+    99%{
+        font-size: 900%;
+        transform: rotateX(80deg);
+        filter: brightness(130%);
+    }
+    99.5%{
+        font-size: 1700%;
+
+        filter: brightness(180%);
+    }
+    100%{
+        font-size: 1500%;
+    }
+}
+.play{
+    background-color: #fda1c69e;
+    font-family:Helvetica, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    color: #d32780;
+    position: absolute;
+    left: 20%;
+    padding: 3%;
+    font-size: 1500%;
+    border-radius: 50%;
+    animation: boing 10s;
+    z-index: 999;
+}
+
+
 .catbox{
     position: absolute;
     display: grid;
     width: 80%;
     height: 60%;
-    
+    overflow: hidden;
+    background-color: #8f1e4941;
     margin: 10%;
-    border: 30px #fff9fd solid;
+    border: 30px #f5c4d6 solid;
     border-radius: 10%;
 }
-
-
 
 
 
@@ -76,11 +272,6 @@ p{
 
 
 
-
-
-
-
-
 .score{
     position: absolute;
     bottom: 0%;
@@ -89,33 +280,15 @@ p{
 
 
 
-
-
-
-
-
-.cat1{
-    position: relative;
-    width: 90%;
-    height: auto;
+.TG1{
+width: 12%;
 }
-.cat2{
-    position: relative;
-    width: 90%;
-    height: auto;
+.TG2{
+width: 12%;
 }
-.cat3{
-    position: relative;
-    width: 90%;
-    height: auto;
+.TG3{
+width: 12%;
 }
-.cat4{
-    position: relative;
-    width: 90%;
-    height: auto;
-}
-.cat5{
-    position: relative;
-    width: 90%;
-    height: auto;
+.TG4{
+width: 12%;
 }
